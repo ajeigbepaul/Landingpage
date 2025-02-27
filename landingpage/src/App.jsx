@@ -1,4 +1,5 @@
 import React from 'react'
+import background from './assets/background.png'
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
       </header>
 
         <div className='px-40 py-40' >
-          <h1 className='text-[40px] font-semibold text-[#091133] para'>Introduce Your Product <br/> Quickly & Effectively</h1>
+          <h1 className='text-[40px] font-semibold text-[#091133] leading-tight'>Introduce Your Product <br/> Quickly & Effectively</h1>
           <h6 className='pr-80'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br/>commodo ligula eget dolor. Aenean massa. Cum sociis natoque <br/>penatibus et magnis dis parturient montes, nascetur ridiculus <br/>
           mus. 
           <br/>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</h6>
