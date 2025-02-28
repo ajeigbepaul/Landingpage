@@ -92,10 +92,10 @@ const App = () => {
       </p>
      </div>
       </div>
-      {/* SECTION 3*/}
+      {/* SECTION 3 */}
       <div className='flex px-24 space-x-20 space-y-20 items-center'>
      <div className='w-1/2'>
-     <img src="section3image.svg" alt=""/>
+     <img src="section3image.svg" alt="" />
      </div>
      <div>
       <h2 className='text-3xl font-bold mb-4'>Light, Fast & Powerful</h2>
