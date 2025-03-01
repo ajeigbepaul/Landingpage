@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from "./components/Button";
 import IconInfo from "./components/IconInfo";
+import SectionText from "./components/SectionText";
+
 
 const App = () => {
   return (
@@ -56,70 +58,7 @@ const App = () => {
           />
         </div>
       </div>
-      {/* SECTION 1 */}
-      <div className='flex gap-8 h-screen items-center justify-center px-24'>
-{/* INFO */}
-        <div className='w-[40%] flex flex-col items-start justify-center space-y-4'>
-       <h2 className='text-3xl text-[#091133] font-semibold'>Light, Fast & Powerful</h2>
-       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-       mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-       <div className='flex items-center justify-between gap-8'>
-        <div className='flex flex-col '>
-        <img src="/section1leftimage.svg" alt="section1leftimage" />
-          <h3>Title Goes Here</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-        </div>
-         <div className='md:text-left md:text-start max-w-sm'>
-         <img src="/section1leftimage.svg" alt="section1leftimage" />
-          <h3>Title Goes Here</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-         </div>
-         
-        </div>
-        </div>
-           <div className='w-60% flex items-center justify-center relative'>
-          <img src="section1image.svg" alt="section1image" />
-        </div>
-      </div>
-      {/* SECTION 2 */}
-      
-     <div className='w-1/2'>
-     <img src="section2image.svg" alt=""/>
-     </div>
-     <div>
-      <h2 className='text-3xl font-bold mb-4'>Light, Fast & Powerful</h2>
-      <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-      mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-      </p>
-     </div>
-      </div>
-      {/* SECTION 3 */}
-      <div className='flex px-24 space-x-20 space-y-20 items-center'>
-     <div className='w-1/2'>
-     <img src="section3image.svg" alt="" />
-     </div>
-     <div>
-      <h2 className='text-3xl font-bold mb-4'>Light, Fast & Powerful</h2>
-      <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-      mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-      </p>
-     </div>
-      </div>
-      {/* SECTION 4 */}
-      <div className='flex px-24 space-x-20 space-y-20 items-center'>
-     <div className='w-1/2'>
-     <img src="section4image.svg" alt=""/>
-     </div>
-     <div>
-      <h2 className='text-3xl font-bold mb-4'>Light, Fast & Powerful</h2>
-      <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-      mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-      </p>
-     </div>
-      </div>
+     
       {/* SECTION ONE */}
       <div className="flex gap-8 h-screen items-center justify-center px-24 ">
         {/* info */}
@@ -146,6 +85,43 @@ const App = () => {
             className="w-[90%]   object-cover absolute right-0"
             alt="heroimage"
           />
+        </div>
+      </div>
+      {/* SECTION TWO */}
+      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+        {/* IMAGE */}
+        <div className='w-[50%] flex items-center justify-center relative'>
+          <img 
+          src="/section2image.svg" 
+          alt="section2image" />
+        </div>
+        <div>
+        <SectionText />
+        </div>
+      </div>
+       {/* SECTION THREE */}
+       <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+        {/* IMAGE */}
+        <div className='w-[50%] flex items-center justify-center relative'>
+          <img 
+          src="/section3image.svg" 
+          alt="section3image" />
+        </div>
+        <div>
+        <SectionText />
+        </div>
+      </div>
+       {/* SECTION FOUR */}
+       <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+        {/* IMAGE */}
+        <div className='w-[50%] flex items-center justify-center relative'>
+          <img 
+          src="/section4image.svg" 
+          alt="section4image" />
+        </div>
+        <div>
+        <SectionText />
+        <Button title="Purchase Now" />
         </div>
       </div>
     </div>
