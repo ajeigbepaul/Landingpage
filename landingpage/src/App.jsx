@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "./components/Button";
 import IconInfo from "./components/IconInfo";
+import Sections from "./components/Sections";
+
 
 const App = () => {
   return (
@@ -82,6 +84,70 @@ const App = () => {
           />
         </div>
       </div>
+      {/* Section 2, 3 and 4 */}
+      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+      <div className="w-[50%] flex items-center justify-center relative bg-red-300">
+          <img
+            src="/section2_image.svg"
+            className="w-[90%]   object-cover absolute right-0"
+            alt="Section2_image"
+          />
+        </div>
+        <div>
+          <Sections/>
+        </div>
+        
+      </div>
+      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+      <div className="w-[50%] flex items-center justify-center relative bg-red-300">
+          <img
+            src="/section3_image.svg"
+            className="w-[90%]   object-cover absolute right-0"
+            alt="Section3_image"
+          />
+        </div>
+        <div>
+          <Sections/>
+        </div>
+      </div>
+      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+      <div className="w-[50%] flex items-center justify-center relative bg-red-300">
+          <img
+            src="/section4_image.svg"
+            className="w-[90%]   object-cover absolute right-0"
+            alt="section4_image"
+          />
+        </div>
+        <div>
+          <Sections/>
+        </div>
+      </div>
+      <div className="items-center px-24 text-center space-y-5 gap-6">
+          <h3 className="text-3xl font-semibold items-center justify-center text-[#091133]">A Price To Suit Everyone</h3>
+          <p className="text-sm text-[#6F7CB2]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+          <p className="text-4xl center font-semibold text-[#222F65]">$40</p>
+          <p className="text-[#37447E] text-sm">UI Design Kit</p>
+          <p className="text-[#5D6970] text-sm">See, One price. Simple.</p>
+          <div className="space-x-4 justify-center flex items-center pb-5">
+           { <Button title="Purchase Now" />}
+            
+          </div>
+
+        </div>
+        <footer className="bg-[#E7ECFF] w-full" >
+          <div className="flex justify-between px-24 space-y-4">
+            <p className="items-center justify-center py-2">&copy;your company</p>
+            <h3 className="text-black font-bold">Landing</h3>
+            <div className="space-x-4 justify-center flex items-center">
+           { <Button title="Purchase Now" />}
+            
+          </div>
+         
+
+          </div>
+          <div></div>
+        </footer>
+      
     </div>
   );
 };
