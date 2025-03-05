@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "./components/Button";
 import IconInfo from "./components/IconInfo";
+import Sections from "./components/sections";
+import Sectionsimage from "./components/Sectionsimage";
 
 const App = () => {
   return (
@@ -72,6 +74,52 @@ const App = () => {
           />
         </div>
       </div>
+      {/*SECTION TWO*/}
+      <div >
+      {/*info */}
+      <Sections
+          sectionsimage={"/section2image.svg"}
+          heading="Light, Fast & Powerful"
+          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+          smalltext=" mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim."
+            lastbutton="Purchase Now"blue
+            />
+      </div>
+
+       {/*SECTION THREE*/}
+       <div >
+      {/*info */}
+      <Sections
+          sectionsimage={"/section3image.svg"}
+          heading="Light, Fast & Powerful"
+          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+          smalltext=" mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim."
+            lastbutton="Purchase Now"blue
+            />
+      </div>
+
+       {/*SECTION FOUR*/}
+       <div className=" flex flex-col items-start justify-center space-y-4">
+        <div>
+      <Sections
+          sectionsimage={"/section4image.svg"}
+          heading="Light, Fast & Powerful"
+          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+          smalltext=" mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim." 
+            lastbutton="Purchase Now"
+            />
+            
+      </div>
+</div>
     </div>
   );
 };
