@@ -1,11 +1,12 @@
-import React from 'react'
-// import Button from './components/Button'
-// import background from './assets/background.png'
+import React from "react";
+import Button from "./components/Button";
+import IconInfo from "./components/IconInfo";
+import Section from "./components/Section";
 
 const App = () => {
   return (
-    <div>
-      {/* <header className="flex justify-between items-center px-24 py-4">
+    <div className="relative">
+      <header className="flex justify-between items-center px-24 py-4">
         <div className="flex space-x-8">
           <h1 className='text-[#505F98] text-sm font-normal'>Home</h1>
           <h1 className='text-[#505F98] text-sm font-normal'>About</h1>
@@ -24,32 +25,100 @@ const App = () => {
 <button className='bg-red-700 text-white px-10 py-2 rounded-md font-semibold'>Buy Now</button>
    {/* <Button title={white}/> */}
       </header>
-
-        {/* <div className='px-40 py-40' >
-          <h1 className='text-[40px] font-semibold text-[#091133] leading-12'>Introduce Your Product <br/> Quickly & Effectively</h1>
-          <h6 className='pr-80'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br/>commodo ligula eget dolor. Aenean massa. Cum sociis natoque <br/>penatibus et magnis dis parturient montes, nascetur ridiculus <br/>
-          mus. 
-          <br/>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</h6>
-        
-        <div>
-        <button>Purchase UI Kit</button>
-        <button>Learn More</button>
-        </div> */}
-
-
-        {/*HERO*/}
-        <div className='flex h-screen'>
-            <div className='px-24 py-60 w-[70%] space-y-4'>
-            <h1 className='text-4xl font-semibold text-[#091133]'>Introduce Your Product Quickly & Effectively</h1>
-
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus.</p>
-            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-            <div className='w-[70%] ml-36'>
-            <img src="/heroimage.svg" className='w-[100%] h-40px py-32' alt="heroimage"/>
-            </div>
+      {/* BACKGROUND IMAGE */}
+      <img
+        src="/herobackground.svg"
+        className="w-[50%] object-cover absolute right-0 top-0"
+        alt="backgroundimage"
+      />
+      {/* HERO */}
+      <div className="flex gap-8 h-screen items-center justify-center px-24  ">
+        {/* INFO */}
+        <div className="w-[40%] flex flex-col items-start justify-center space-y-4">
+          <h2 className="text-3xl text-[#091133] font-semibold">
+            Introduce Your Product Quickly & Effectively
+          </h2>
+          <p className="text-sm text-[#091133]">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+          <p className="text-sm text-[#091133]">
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+          </p>
+          <div className="space-x-4 flex items-center">
+            <Button title="Purchase Ui Kit" />
+            <Button title="Learn more" white />
+          </div>
         </div>
+        <div className="w-[60%] flex items-center justify-center relative bg-red-300">
+          <img
+            src="/heroimage.svg"
+            className="w-[60%]   object-cover absolute -right-24"
+            alt="heroimage"
+          />
+        </div>
+      </div>
+      {/* SECTION ONE */}
+      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+        {/* info */}
+        <div className="w-[50%] flex flex-col items-start  space-y-4">
+          <h2 className="text-[#091133] text-3xl font-medium">
+            Light, Fast & Powerful
+          </h2>
+          <p className="text-[#6F7CB2] text-[16px] font-normal">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus{" "}
+          </p>
+          <p className="text-[#6F7CB2] text-[16px] font-normal pb-20">
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.
+          </p>
+          <div className="flex space-x-4 mt-10">
+            <IconInfo />
+            <IconInfo />
+          </div>
+        </div>
+        {/* IMAGE */}
+        <div className="w-[50%] flex items-center justify-center relative bg-red-300">
+          <img
+            src="/section1image.svg"
+            className="w-[90%]   object-cover absolute right-0"
+            alt="heroimage"
+          />
+        </div>
+      </div>
+      {/* SECTION TWO */}
+      <Section
+        img={"/section2image.svg"}
+        title={" Light, Fast & Powerful"}
+        descr1={`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus`}
+        descr2={` mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.`}
+      />
+      <Section
+        img={"/section3image.svg"}
+        title={" Light, Fast & Powerful"}
+        descr1={`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus`}
+        descr2={` mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.`}
+      />
+      <Section
+        img={"/section4image.svg"}
+        title={" Light, Fast & Powerful"}
+        descr1={`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus`}
+        descr2={` mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.`}
+        havebutton={true}
+      />
     </div>
   )
 }
