@@ -14,8 +14,8 @@ const App = () => {
         </div>
         <h1 className="text-[#37447E] text-2xl font-bold">Landing</h1>
         <button className='bg-[#111B47] text-white px-10 py-2 rounded-md font-medium'>Buy now</button>
-      </header> */}
-      <header className='flex items-center justify-between px-24 py-4'>
+      </header>
+      {/* <header className='flex items-center justify-between px-24 py-4'>
 <div className='flex space-x-8'>
   <h1 className='text-blue-900 text-[16px] font-normal'>Home</h1>
   <h1 className='text-blue-900 text-[16px] font-normal'>About</h1>
@@ -23,8 +23,8 @@ const App = () => {
 </div>
 <div className='text-blue-900 text-[22px] font-bold'>Landing</div>
 <button className='bg-red-700 text-white px-10 py-2 rounded-md font-semibold'>Buy Now</button>
-   {/* <Button title={white}/> */}
-      </header>
+   <Button title={white}/>
+      </header> */}
       {/* BACKGROUND IMAGE */}
       <img
         src="/herobackground.svg"
