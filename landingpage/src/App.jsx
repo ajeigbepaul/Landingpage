@@ -16,7 +16,7 @@ const App = () => {
         <h1 className="text-[#37447E] text-2xl font-bold">Landing</h1>
         <button className='bg-[#111B47] text-white px-10 py-2 rounded-md font-medium'>Buy now</button>
       </header> */}
-    <header className="flex flex-col md:flex-row bg-green-400 flex-wrap justify-between items-center max-w-screen-xl mx-auto px-6 md:px-24 py-4 space-y-4 md:space-y-0">
+    <header className="flex flex-col md:flex-row bg-yellow-400 flex-wrap justify-between items-center max-w-screen-xl mx-auto px-6 md:px-24 py-4 space-y-4 md:space-y-0">
   
     <div className="flex space-x-4 md:space-x-8">
       <h1 className="text-[#000000] text-sm font-normal">Home</h1>
