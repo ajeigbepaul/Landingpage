@@ -120,6 +120,32 @@ const App = () => {
             
       </div>
 </div>
+
+    <div className="flex-row bg-[#E7ECFF] h-screen items-center justify-center
+                     pt-24 space-y-5 ">
+                      
+      <div><h2 className="text-[#091133]  text-3xl font-semibold text-center">
+        A Price To Suit Everyone</h2></div>
+     <div className="justify-center flex">
+       <p className="text-[#6F7CB2] text-center w-[32%] text-xs ">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus 
+      </p>
+      </div>
+      <div className="justify-center flex">
+        <p className="text-[#222F65] font-semibold text-4xl">$40</p>
+      </div>
+     < div className="justify-center flex">
+        <p className="text-[#37447E] text-xs">UI Design Kit</p>
+      </div>
+      < div className="justify-center flex pt-10">
+        <p className="text-[#5D6970] text-[0.65rem]"> See, One price. Simple.</p>
+      </div>
+      < div className="justify-center flex">
+      <Button title="Purchase Now" />
+      </div>
+    </div>
     </div>
   );
 };
