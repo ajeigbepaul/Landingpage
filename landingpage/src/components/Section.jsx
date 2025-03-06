@@ -23,7 +23,7 @@ function Section({img,title,descr1,descr2,havebutton}) {
         <p className="text-[#6F7CB2] text-[16px] font-normal">
           {descr2}
         </p>
-        {havebutton && <Button title={"Purchase now"}/>}
+        {havebutton && <Button title={"Purchase Now"}/>}
       </div>
     </div>
   );
