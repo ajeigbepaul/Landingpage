@@ -1,13 +1,12 @@
 import React from 'react'
 import Button from "./components/Button";
 import IconInfo from "./components/IconInfo";
-import SectionText from "./components/SectionText";
-
+import Section from "./components/Section";
 
 const App = () => {
   return (
-    <div>
-      {/* <header className="flex justify-between items-center px-24 py-4">
+    <div className="relative">
+      <header className="flex justify-between items-center px-24 py-4">
         <div className="flex space-x-8">
           <h1 className='text-[#505F98] text-sm font-normal'>Home</h1>
           <h1 className='text-[#505F98] text-sm font-normal'>About</h1>
@@ -28,9 +27,14 @@ const App = () => {
     <h1 className="text-[#37447E] text-2xl font-bold">Landing</h1>
         <Button title="Buy more" />
       </header>
-
+      {/* BACKGROUND IMAGE */}
+      <img
+        src="/herobackground.svg"
+        className="w-[50%] object-cover absolute right-0 top-0"
+        alt="backgroundimage"
+      />
       {/* HERO */}
-      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
+      <div className="flex gap-8 h-screen items-center justify-center px-24  ">
         {/* INFO */}
         <div className="w-[40%] flex flex-col items-start justify-center space-y-4">
           <h2 className="text-3xl text-[#091133] font-semibold">
@@ -53,7 +57,7 @@ const App = () => {
         <div className="w-[60%] flex items-center justify-center relative bg-red-300">
           <img
             src="/heroimage.svg"
-            className="w-[60%]   object-cover absolute right-0"
+            className="w-[60%]   object-cover absolute -right-24"
             alt="heroimage"
           />
         </div>
@@ -63,7 +67,9 @@ const App = () => {
       <div className="flex gap-8 h-screen items-center justify-center px-24 ">
         {/* info */}
         <div className="w-[50%] flex flex-col items-start  space-y-4">
-          <h2 className="text-[#091133] text-3xl font-medium">Light, Fast & Powerful</h2>
+          <h2 className="text-[#091133] text-3xl font-medium">
+            Light, Fast & Powerful
+          </h2>
           <p className="text-[#6F7CB2] text-[16px] font-normal">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -88,42 +94,34 @@ const App = () => {
         </div>
       </div>
       {/* SECTION TWO */}
-      <div className="flex gap-8 h-screen items-center justify-center px-24 ">
-        {/* IMAGE */}
-        <div className='w-[50%] flex items-center justify-center relative'>
-          <img 
-          src="/section2image.svg" 
-          alt="section2image" />
-        </div>
-        <div>
-        <SectionText />
-        </div>
-      </div>
-       {/* SECTION THREE */}
-       <div className="flex gap-8 h-screen items-center justify-center px-24 ">
-        {/* IMAGE */}
-        <div className='w-[50%] flex items-center justify-center relative'>
-          <img 
-          src="/section3image.svg" 
-          alt="section3image" />
-        </div>
-        <div>
-        <SectionText />
-        </div>
-      </div>
-       {/* SECTION FOUR */}
-       <div className="flex gap-8 h-screen items-center justify-center px-24 ">
-        {/* IMAGE */}
-        <div className='w-[50%] flex items-center justify-center relative'>
-          <img 
-          src="/section4image.svg" 
-          alt="section4image" />
-        </div>
-        <div>
-        <SectionText />
-        <Button title="Purchase Now" />
-        </div>
-      </div>
+      <Section
+        img={"/section2image.svg"}
+        title={" Light, Fast & Powerful"}
+        descr1={`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus`}
+        descr2={` mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.`}
+      />
+      <Section
+        img={"/section3image.svg"}
+        title={" Light, Fast & Powerful"}
+        descr1={`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus`}
+        descr2={` mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.`}
+      />
+      <Section
+        img={"/section4image.svg"}
+        title={" Light, Fast & Powerful"}
+        descr1={`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus`}
+        descr2={` mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim.`}
+        havebutton={true}
+      />
     </div>
   );
 };
